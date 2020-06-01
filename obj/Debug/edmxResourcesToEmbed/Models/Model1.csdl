@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quizonlineModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_question">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="question_content" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="subject_id" Type="Int32" Nullable="false" />
+    <Property Name="status_id" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="quizonlineEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_question" EntityType="Self.tbl_question" />
+  </EntityContainer>
+</Schema>

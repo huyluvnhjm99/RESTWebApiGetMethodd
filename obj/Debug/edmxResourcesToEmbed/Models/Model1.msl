@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="quizonlineModelStoreContainer" CdmEntityContainer="quizonlineEntities1">
+    <EntitySetMapping Name="tbl_question">
+      <EntityTypeMapping TypeName="quizonlineModel.tbl_question">
+        <MappingFragment StoreEntitySet="tbl_question">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="question_content" ColumnName="question_content" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="subject_id" ColumnName="subject_id" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
